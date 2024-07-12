@@ -5,19 +5,18 @@ body {
 }
 
 .page{
-    
+
 }
 
 .header {
     background-color: #1f2947;
-    padding: 0px, 50px;
 }
 
 .menu {
     display: flex;
     gap: 24px;
     align-items: baseline;
-    padding: 0px 16px;
+    padding: 0px 10%;
 }
 
 .logo {
@@ -33,31 +32,48 @@ h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: extra-bold;
+    margin: 0;
 }
 
-.description,p .header,a {
+.description p, .header a {
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
+    font-weight: lighter;
+    margin: 0;
     
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .image {
     background-color: #666;
+    max-width: 600px;
+    min-width:400px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .top-content{
     background-color: #1f2947;
     display: flex;
-    padding: 50px;
+    padding: 50px 10%;
+    gap: 30px;
 }
 
-.button .footer-node{
+.footer-node{
     background-color: #3882F6;
 }
 
 .mid-content {
-
+    text-align: center;
+    padding: 50px 0;
+    padding-bottom: 100px;
 }
 
 h2 {
@@ -66,19 +82,107 @@ h2 {
     font-weight: extra-bold;
 }
 
-.content-item,p{
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.content-item{
     color: gray;
     font-size: 18px;
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    max-width: 190px;
+}
+
+.content-item p {
+    margin: 8px;;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: #3882F6;
+    border-style: solid;
+
 }
 
 .bottom-content {
     background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20%;
 }
 
-.footer {
+.quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: lighter;
 
+
+}
+
+.signature {
+    font-weight: bold;
+    align-self: flex-end;
+    padding: 12px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px, 10%;
+    margin: 60px 0px;
+}
+
+.footer-node {
+    padding: 30px 100px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
 }
 
 .copyright {
     background-color: #1f2947;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 8px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: semi-bold;
+    border-radius: 8px;
+    border-width: 0;
+    margin-top: 16px;
+    max-width: 120px;
+}
+
+.cta-button {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    
+}
+
+.footer-text p {
+    color: white;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.footer-text h3 {
+    margin: 0;
 }
