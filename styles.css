@@ -4,8 +4,10 @@ body {
     padding: 0px;
 }
 
-.page{
-
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
 }
 
 .header {
